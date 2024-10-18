@@ -1,4 +1,5 @@
  #include <iostream>
+ #include <algorithm>
  using namespace std;
  void updateArray(int arr[],int i,int data){
     arr[i]=data;
@@ -15,6 +16,7 @@
     int arr[]={2,5,6,7,8};
     int n=sizeof(arr)/sizeof(int);
     updateArray(arr,1,13);
+    sort(arr,arr+n);
     print(arr,n);
     cout<<arr<<"\n";
     arraySize(arr);
